@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | James Aron Tariao</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">James Aron</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link" data-page="home">Home</a>
+          <a href="about.html" class="nav-link" data-page="about">About</a>
+          <a href="projects.html" class="nav-link" data-page="projects">Projects</a>
+          <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s build something together.</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-card">
+            <h2>Contact Information</h2>
+            <ul class="info-list">
+              <li><strong>Email:</strong><a href="mailto:banztariao@gmail.com"> banztariao@gmail.com</a></li>
+              <li><strong>Phone:</strong> 0985-443-2385</li>
+              <li><strong>Location:</strong> Cebu City, Cebu</li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h2>Send Me a Message</h2>
+            <form id="contact-form" novalidate>
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" required />
+
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required />
+
+              <label>Gender</label>
+              <div class="inline-options">
+                <label><input type="radio" name="gender" value="Male" /> Male</label>
+                <label><input type="radio" name="gender" value="Female" /> Female</label>
+              </div>
+
+              <label>Interested In</label>
+              <div class="inline-options">
+                <label><input type="checkbox" name="interest" value="Web Development" /> Web Development</label>
+                <label><input type="checkbox" name="interest" value="Graphic Design" /> Graphic Design</label>
+              </div>
+
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option>General Inquiry</option>
+                <option>Project Collaboration</option>
+                <option>Feedback</option>
+              </select>
+
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <div class="form-actions">
+                <button type="submit" class="btn primary">Submit</button>
+                <button type="reset" class="btn secondary">Reset</button>
+              </div>
+
+              <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span data-current-year></span> James Aron Tariao. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
